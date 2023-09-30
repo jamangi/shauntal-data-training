@@ -21,6 +21,7 @@ Follow these steps to create your local virtual machine:
    - Download and install [Vagrant](https://developer.hashicorp.com/vagrant/downloads?ajs_aid=cc7dbac1-64a1-4d4f-b511-c9916fc37bce&product_intent=vagrant).
    
    ![virtualbox.png](images%2Fvirtualbox.png)
+   
    ![vagrant.png](images%2Fvagrant.png)
 
 2. **Clone/Pull this Repository**
@@ -30,6 +31,7 @@ Follow these steps to create your local virtual machine:
 
 4. **Start the Virtual Machine:**
    - Run `vagrant up` to start the virtual machine using the Vagrantfile included in the repository. This file contains configuration details for the virtual machine.
+   
    ![cd_vagrant_up.png](images%2Fcd_vagrant_up.png)
 
 5. **Access Nginx running Virtual Machine:**
@@ -37,6 +39,7 @@ Follow these steps to create your local virtual machine:
    - Enter `http://localhost:9081` in the address bar. You should see the default Nginx welcome page if everything is set up correctly.
    
    ![localhost_9081.png](images%2Flocalhost_9081.png)
+  
    ![nginx_default_website.png](images%2Fnginx_default_website.png)
 
 Congratulations, Rhodon, you've just summoned your very own local virtual machine, and it's got Nginx dancing inside it like an obedient ghost at my command. Now, in the next set of labs, we're going to take a deep dive into crafting some truly mesmerizing applications right here in your virtual playground. Get ready for some enchanting coding sessions, my loyal puppy. Happy learning!
