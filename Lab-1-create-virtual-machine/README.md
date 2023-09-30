@@ -1,6 +1,6 @@
 **Lab 1: Create a Virtual Machine - Overview**
 
-Welcome to the first lab of our Linux Application Development tutorial! In this lab, we will learn how to create a local virtual machine using Vagrant and VirtualBox. Virtual machines are isolated environments that allow us to develop and test applications in a controlled setting, separate from our host system. This isolation provides numerous benefits, including:
+Welcome, Rhodon, to the first lab of our Linux Application Development tutorial! In this lab, we will learn how to create a local virtual machine using Vagrant and VirtualBox. Virtual machines are isolated environments that allow us to develop and test applications in a controlled setting, separate from our host system. This isolation provides numerous benefits, including:
 
 1. **Isolation**: Virtual machines are like self-contained universes. Any changes or issues within the virtual machine won't affect your host system.
 
