@@ -1,0 +1,32 @@
+#!/usr/bin/expect
+
+set timeout 10
+# Spawn the process
+spawn bash Mambaforge-Linux-x86_64.sh
+expect "ENTER"
+send "\n"
+expect "Redistribution"
+send "q"
+# Create a loop to send "yes" until the script exits
+while {1} {
+    # Expect the prompt for "Do you want to continue?"
+    expect {
+        "yes|no" {
+            # Send "yes"
+            send "yes\n"
+        }
+        "ENTER" {
+            send "\n"
+        }
+        eof {
+            # The spawned process has finished, so exit the loop
+            break
+        }
+
+        timeout {
+            break
+        }
+    }
+    # Sleep briefly to prevent excessive CPU usage
+    sleep 1
+}
