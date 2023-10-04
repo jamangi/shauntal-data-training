@@ -11,6 +11,9 @@ Vagrant.configure("2") do |config|
     # Update the package lists and install Python, Flask, and Nginx
     sudo apt-get update -y
     sudo wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+    sudo apt-get install expect
+    sudo wget --no-cache -O expect_test.exp "https://raw.githubusercontent.com/jamangi/shauntal-data-training/main/Class-Lab-1-bash/expect_test.exp"
+    sudo chmod +x expect_test.exp
 
   SHELL
 end
