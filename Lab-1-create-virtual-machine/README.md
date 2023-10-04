@@ -41,8 +41,12 @@ Follow these steps to create your local virtual machine:
    ![localhost_9081.png](images%2Flocalhost_9081.png)
   
    ![nginx_default_website.png](images%2Fnginx_default_website.png)
+6. **How to check that the VM is running:**
+   - You can open the virtual box application, which will show you if the virtual machine exists, and how much space it's using if it does.
+   
+   ![virtual box manager.png](images%2Fvirtual%20box%20manager.png)
 
-6. **Destroy Lab 1 VM**: 
+7. **Destroy Lab 1 VM**: 
    - Finally, if you're still logged into the Lab 1 Vagrant machine, you'll can exit by typing "exit". Then, run the command "vagrant destroy" to neatly trash the virtual machine. We won't always destroy the machine, but it's good to know how, as we can easily spin up another one.
 
 Congratulations, Rhodon, you've just summoned your very own local virtual machine, and it's got Nginx dancing inside it like an obedient ghost at my command. Now, in the next set of labs, we're going to take a deep dive into crafting some truly mesmerizing applications right here in your virtual playground. Get ready for some enchanting coding sessions, my loyal puppy. Happy learning!
