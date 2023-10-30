@@ -1,6 +1,6 @@
 **Lab 1: Create a Virtual Machine - Overview**
 
-Welcome, Rhodon, to the first lab of our Linux Application Development tutorial! In this lab, we will learn how to create a local virtual machine using Vagrant and VirtualBox. Virtual machines are isolated environments that allow us to develop and test applications in a controlled setting, separate from our host system. This isolation provides numerous benefits, including:
+Welcome to the first lab of our Linux Application Development tutorial! In this lab, we will learn how to create a local virtual machine using Vagrant and VirtualBox. Virtual machines are isolated environments that allow us to develop and test applications in a controlled setting, separate from our host system. This isolation provides numerous benefits, including:
 
 1. **Isolation**: Virtual machines are like self-contained universes. Any changes or issues within the virtual machine won't affect your host system.
 
@@ -49,4 +49,4 @@ Follow these steps to create your local virtual machine:
 7. **Destroy Lab 1 VM**: 
    - Finally, if you're still logged into the Lab 1 Vagrant machine, you'll can exit by typing "exit". Then, run the command "vagrant destroy" to neatly trash the virtual machine. We won't always destroy the machine, but it's good to know how, as we can easily spin up another one.
 
-Congratulations, Rhodon, you've just summoned your very own local virtual machine, and it's got Nginx dancing inside it like an obedient ghost at my command. Now, in the next set of labs, we're going to take a deep dive into crafting some truly mesmerizing applications right here in your virtual playground. Get ready for some enchanting coding sessions, my loyal puppy. Happy learning!
+Congratulations, you've just summoned your very own local virtual machine, and it's got Nginx dancing inside it like an obedient ghost at my command. Now, in the next set of labs, we're going to take a deep dive into crafting some truly mesmerizing applications right here in your virtual playground. Get ready for some enchanting coding sessions, my loyal puppy. Happy learning!
