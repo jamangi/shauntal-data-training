@@ -1,6 +1,11 @@
 # Lab 2: Flask API
 
 1. **Release Lab 1's Restless Spirit**: To begin, journey to the Lab 1 folder in your terminal. If you're still tethered to the Lab 1 Vagrant specter, you must first sever your connection. Use the command "vagrant destroy" to release the restless spirit.
+- If you ever need to destroy a vagrant but it won't listen, then use 'vagrant ssh' to log into it, 'ps aux' to see all of the processes, and 
+- ![img.png](img.png)
+- Then run 'sudo kill <pid of process>'
+- ![img_1.png](img_1.png)
+- You may get a weird error message, but the process should be gone, allowing you to then exit and use vagrant destroy.
 
 2. **Summon Lab 2's Phantom**: Now, venture into the Lab 2 realm and invoke the virtual machine with "vagrant up." 
 
