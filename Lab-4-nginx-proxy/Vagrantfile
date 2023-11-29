@@ -29,5 +29,8 @@ Vagrant.configure("2") do |config|
 
     sudo wget --no-cache -O /etc/nginx/sites-available/flaskapi.conf https://raw.githubusercontent.com/jamangi/shauntal-data-training/main/Lab-4-nginx-proxy/flaskapi.conf
     sudo ln -s /etc/nginx/sites-available/flaskapi.conf /etc/nginx/sites-enabled/
+    sudo nginx -t
+    sudo chmod 775 /home/vagrant/
+    sudo systemctl restart nginx
   SHELL
 end
