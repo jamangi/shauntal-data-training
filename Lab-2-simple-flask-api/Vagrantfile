@@ -19,6 +19,6 @@ Vagrant.configure("2") do |config|
     # sudo systemctl enable nginx
 
     sudo wget --no-cache -O flaskapi.py https://raw.githubusercontent.com/jamangi/shauntal-data-training/main/Lab-2-simple-flask-api/flaskapi.py
-    # sudo python3 flaskapi.py
+    sudo python3 flaskapi.py
   SHELL
 end
