@@ -1,0 +1,28 @@
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "bento/ubuntu-22.04"
+  config.vm.network "forwarded_port", guest: 5000, host: 9001
+  config.vm.network "forwarded_port", guest: 80, host: 9081
+  config.vm.provision "shell", inline: <<-SHELL
+    # Update the package lists and install Python, Flask, and Nginx
+    sudo apt-get update -y
+    sudo wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+    sudo apt-get install -y expect
+    sudo wget --no-cache -O my_python_script.py "https://raw.githubusercontent.com/jamangi/shauntal-data-training/main/Class-Lab-1-bash/my_python_script.py"
+    sudo chmod +x my_python_script.py
+    sudo wget --no-cache -O expect_test.exp "https://raw.githubusercontent.com/jamangi/shauntal-data-training/main/Class-Lab-1-bash/expect_test.exp"
+    sudo chmod +x expect_test.exp
+    sudo wget --no-cache -O setup_envs.bash "https://raw.githubusercontent.com/jamangi/shauntal-data-training/main/Class-Lab-1-bash/setup_envs.bash"
+    sudo chmod +x setup_envs.bash
+    # . setup_envs.bash
+    # Run the above command after running vagrant ssh to log in
+    # Then run `source ./mambaforge/bin/activate`
+    # ./my_python_script.py
+    # Then you can run this python script command
+
+  SHELL
+end
